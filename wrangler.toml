@@ -14,6 +14,6 @@ service = "prompt-hub"
 [[d1_databases]]
 binding = "DB"
 database_name = "prompt_hub"
-database_id = "YOUR_DATABASE_ID"
-preview_database_id = "YOUR_PREVIEW_DATABASE_ID"
+database_id = "9efe31be-b125-4fe9-9616-339aa48596f4"
+preview_database_id = "9efe31be-b125-4fe9-9616-339aa48596f4"
 migrations_dir = "migrations"
