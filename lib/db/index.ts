@@ -1,5 +1,6 @@
 import { getCloudflareContext } from "@opennextjs/cloudflare";
 import { cache } from "react";
+import { D1Database } from "@cloudflare/workers-types";
 
 export const getDb = cache(() => {
   const { env } = getCloudflareContext();
