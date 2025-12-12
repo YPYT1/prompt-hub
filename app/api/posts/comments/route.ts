@@ -49,7 +49,7 @@ export async function GET(request: NextRequest) {
       .bind(postId)
       .all<CommentRow>();
 
-    const comments: Comment[] = results.results.map((row) => ({
+    const comments: Comment[] = results.results.map((row: CommentRow) => ({
       id: row.id,
       postId: row.post_id,
       content: row.content,
