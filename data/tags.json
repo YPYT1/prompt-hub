@@ -1,0 +1,95 @@
+[
+  {
+    "id": "tag-001",
+    "name": "编程开发",
+    "color": "#8b5cf6",
+    "group": "技术",
+    "order": 1,
+    "usageCount": 61,
+    "createdAt": "2024-11-01T00:00:00.000Z"
+  },
+  {
+    "id": "tag-002",
+    "name": "工作效率",
+    "color": "#06b6d4",
+    "group": "通用",
+    "order": 2,
+    "usageCount": 103,
+    "createdAt": "2024-11-01T00:00:00.000Z"
+  },
+  {
+    "id": "tag-003",
+    "name": "文档写作",
+    "color": "#10b981",
+    "group": "技术",
+    "order": 3,
+    "usageCount": 28,
+    "createdAt": "2024-11-05T00:00:00.000Z"
+  },
+  {
+    "id": "tag-004",
+    "name": "创意写作",
+    "color": "#ec4899",
+    "group": "创意",
+    "order": 4,
+    "usageCount": 56,
+    "createdAt": "2024-11-10T00:00:00.000Z"
+  },
+  {
+    "id": "tag-005",
+    "name": "数据分析",
+    "color": "#f59e0b",
+    "group": "技术",
+    "order": 5,
+    "usageCount": 19,
+    "createdAt": "2024-11-15T00:00:00.000Z"
+  },
+  {
+    "id": "tag-006",
+    "name": "语言学习",
+    "color": "#3b82f6",
+    "group": "学习",
+    "order": 6,
+    "usageCount": 87,
+    "createdAt": "2024-11-15T00:00:00.000Z"
+  },
+  {
+    "id": "tag-007",
+    "name": "产品设计",
+    "color": "#3b82f6",
+    "group": "工作",
+    "order": 7,
+    "usageCount": 33,
+    "createdAt": "2024-11-20T00:00:00.000Z"
+  },
+  {
+    "id": "tag-008",
+    "name": "AI提示",
+    "color": "#a855f7",
+    "parentId": "tag-001",
+    "group": "技术",
+    "order": 8,
+    "usageCount": 45,
+    "createdAt": "2024-11-25T00:00:00.000Z"
+  },
+  {
+    "id": "tag-009",
+    "name": "代码优化",
+    "color": "#14b8a6",
+    "parentId": "tag-001",
+    "group": "技术",
+    "order": 9,
+    "usageCount": 22,
+    "createdAt": "2024-12-01T00:00:00.000Z"
+  },
+  {
+    "id": "tag-010",
+    "name": "翻译",
+    "color": "#6366f1",
+    "parentId": "tag-006",
+    "group": "学习",
+    "order": 10,
+    "usageCount": 38,
+    "createdAt": "2024-12-05T00:00:00.000Z"
+  }
+]
