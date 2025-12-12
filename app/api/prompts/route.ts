@@ -34,7 +34,7 @@ export async function GET() {
         updated_at: string;
       }>();
 
-    const prompts: Prompt[] = results.results.map((row) => ({
+    const prompts: Prompt[] = results.results.map((row: PromptRow) => ({
       id: row.id,
       title: row.title,
       content: row.content,
