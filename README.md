@@ -85,7 +85,7 @@ npx wrangler d1 create prompt_hub
 npx wrangler d1 migrations apply DB --remote
 
 # 5. 部署
-pnpm deploy
+pnpm run deploy
 ```
 
 ### 方式二：Git 集成部署
