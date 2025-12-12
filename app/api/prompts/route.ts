@@ -34,19 +34,7 @@ export async function GET() {
         "SELECT * FROM prompts WHERE user_id = ? ORDER BY updated_at DESC"
       )
       .bind(user.id)
-      .all<{
-        id: string;
-        user_id: string;
-        title: string;
-        content: string;
-        description: string | null;
-        tags_json: string;
-        is_favorite: number;
-        usage_count: number;
-        versions_json: string;
-        created_at: string;
-        updated_at: string;
-      }>();
+      .all<PromptRow>();
 
     const prompts: Prompt[] = results.results.map((row: PromptRow) => ({
       id: row.id,
