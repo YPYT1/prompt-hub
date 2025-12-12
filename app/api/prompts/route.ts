@@ -3,6 +3,20 @@ import { getDb } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth/session";
 import { Prompt } from "@/lib/types";
 
+interface PromptRow {
+  id: string;
+  user_id: string;
+  title: string;
+  content: string;
+  description: string | null;
+  tags_json: string;
+  is_favorite: number;
+  usage_count: number;
+  versions_json: string;
+  created_at: string;
+  updated_at: string;
+}
+
 // 获取所有提示词
 export async function GET() {
   try {
