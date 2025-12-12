@@ -28,7 +28,7 @@ export default function TagsPage() {
     const loadTags = async () => {
       try {
         const response = await fetch("/api/tags");
-        const data = await response.json();
+        const data = (await response.json()) as { data?: Tag[] };
         setTags(data.data || []);
       } catch (error) {
         toast.error("加载标签失败");
@@ -114,7 +114,7 @@ export default function TagsPage() {
         method: "DELETE",
       });
 
-      const result = await response.json();
+      const result = (await response.json()) as { error?: string };
 
       if (!response.ok) {
         toast.error(result.error || "删除失败");

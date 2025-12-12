@@ -39,6 +39,7 @@ def main():
                 'failure': request.failure
             })
 
+        #监听请求失败
         page.on('requestfailed', handle_request_failed)
 
         print("正在访问 http://localhost:3001 ...")

@@ -40,8 +40,8 @@ export default function HomePage() {
           fetch("/api/prompts"),
           fetch("/api/tags"),
         ]);
-        const promptsData = await promptsRes.json();
-        const tagsData = await tagsRes.json();
+        const promptsData = (await promptsRes.json()) as { data?: Prompt[] };
+        const tagsData = (await tagsRes.json()) as { data?: Tag[] };
         setPrompts(promptsData.data || []);
         setTags(tagsData.data || []);
       } catch (error) {
@@ -230,9 +230,11 @@ export default function HomePage() {
 
           if (!response.ok) throw new Error("导入失败");
 
-          const result = await response.json();
-          setPrompts(result.data.prompts || prompts);
-          setTags(result.data.tags || tags);
+          const result = (await response.json()) as {
+            data?: { prompts?: Prompt[]; tags?: Tag[] };
+          };
+          setPrompts(result.data?.prompts || prompts);
+          setTags(result.data?.tags || tags);
           toast.success("数据已导入");
         } else {
           toast.error("无效的数据格式");
